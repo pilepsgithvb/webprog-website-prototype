@@ -1,19 +1,22 @@
 body {
     font-family: Corbel, Arial, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
     background-color: #ffffff;
+    margin: 120px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/467690780_1265441291354030_1820954853775520306_n.png?stp=dst-png_s640x640&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEhShTcG6T8TgvOGr1TX9_vsfYaYOoVoeix9hpg6hWh6Hd1bYNyo6tBgG6u3pqh8AUx6Fl6FtrgGpgzO4eM0T05&_nc_ohc=uJdiRpfn39cQ7kNvgHglyr5&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHFADzv2g-NHJAKA35xai99KtsYu17kKhmiYyP4s4VEzA&oe=67AE12E9);
 }
 
 .header {
     font-family: 'Copperplate Gothic Bold', sans-serif;
     background-color: #c70000;
     color: white;
+    outline: 5px solid #c70000;
     padding: 20px;
-    font-size: 28px;
+    font-size: 43px;
     border: 5px solid white;
-    margin: 20px auto;
+    margin: 10px auto;
     display: inline-block;
     text-transform: uppercase;
 }
@@ -21,9 +24,10 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    max-width: 1000px;
-    margin: 20px auto;
+    gap: 5px;
+    max-width: 900px;
+    margin: 5px auto;
+    align-items: center;
 }
 
 .tile {
@@ -35,10 +39,12 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    }
 
 .tile::before {
     content: '';
